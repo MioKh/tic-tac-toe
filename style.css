@@ -1,0 +1,46 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --cell-size: 100px;
+    --mark-size: cal(var(--cell-size) * .9);
+}
+
+body{
+    margin: 0;
+}
+
+
+.board{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,auto);
+}
+
+.cell{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid black;
+}
+
+.board .cell:not(:nth-child(-n + 3)) {
+    border-top: none;
+  }
+  
+  .board .cell:not(:nth-child(3n + 1)) {
+    border-left: none;
+  }
+  
+  .board .cell:not(:nth-child(3n)) {
+    border-right: none;
+  }
+  
+  .board .cell:not(:nth-last-child(-n + 3)) {
+    border-bottom: none;
+  }

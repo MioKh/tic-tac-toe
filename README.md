@@ -15,3 +15,35 @@ So i have no idea how to even start So i'll start by identifying what we need si
 
 i guess that's it I'll try to work it out one by one and see if any problems come up and write them here 
 
+## 1 the requirements 
+
+so you need a player tracker for score 
+a array for the grid and cells
+switching turns
+click event thing 
+hover thing to show a lighter version of the icons
+update way to update both array and switch turns
+maybe a score to make a 3 thing game score
+
+
+min i max algorithm for the robot 
+restart modal that reset and clear the grid
+
+
+## 2 Components 
+- board
+- players
+- the grid itself and its cells
+- restart modal 
+- the X and O icons 
+
+
+## tracking 
+could be done using a 2d array that we use to render the cells in the first part
+
+
+
+
+
+
+### you know what just test it 
